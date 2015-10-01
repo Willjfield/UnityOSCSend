@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: 0613c70d568a54b5c8d57942d5ee1bfe
+timeCreated: 1443316847
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Cinema4D_Editor
+    100002: Earth
+    100004: Jupiter
+    100006: Mars
+    100008: Mercury
+    100010: Neptune
+    100012: Rings
+    100014: Saturn
+    100016: //RootNode
+    100018: Sun
+    100020: Torus
+    100022: Torus_2
+    100024: Torus_3
+    100026: Torus_4
+    100028: Torus_5
+    100030: Torus_6
+    100032: Torus_7
+    100034: Torus_8
+    100036: Uranus
+    100038: Venus
+    400000: Cinema4D_Editor
+    400002: Earth
+    400004: Jupiter
+    400006: Mars
+    400008: Mercury
+    400010: Neptune
+    400012: Rings
+    400014: Saturn
+    400016: //RootNode
+    400018: Sun
+    400020: Torus
+    400022: Torus_2
+    400024: Torus_3
+    400026: Torus_4
+    400028: Torus_5
+    400030: Torus_6
+    400032: Torus_7
+    400034: Torus_8
+    400036: Uranus
+    400038: Venus
+    2300000: Earth
+    2300002: Jupiter
+    2300004: Mars
+    2300006: Mercury
+    2300008: Neptune
+    2300010: Rings
+    2300012: Saturn
+    2300014: Sun
+    2300016: Torus
+    2300018: Torus_2
+    2300020: Torus_3
+    2300022: Torus_4
+    2300024: Torus_5
+    2300026: Torus_6
+    2300028: Torus_7
+    2300030: Torus_8
+    2300032: Uranus
+    2300034: Venus
+    3300000: Earth
+    3300002: Jupiter
+    3300004: Mars
+    3300006: Mercury
+    3300008: Neptune
+    3300010: Rings
+    3300012: Saturn
+    3300014: Sun
+    3300016: Torus
+    3300018: Torus_2
+    3300020: Torus_3
+    3300022: Torus_4
+    3300024: Torus_5
+    3300026: Torus_6
+    3300028: Torus_7
+    3300030: Torus_8
+    3300032: Uranus
+    3300034: Venus
+    4300000: Sun
+    4300002: Neptune
+    4300004: Torus
+    4300006: Uranus
+    4300008: Torus_2
+    4300010: Saturn
+    4300012: Torus_3
+    4300014: Rings
+    4300016: Jupiter
+    4300018: Torus_4
+    4300020: Mars
+    4300022: Torus_5
+    4300024: Earth
+    4300026: Torus_6
+    4300028: Venus
+    4300030: Torus_7
+    4300032: Mercury
+    4300034: Torus_8
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
