@@ -46,6 +46,7 @@ public struct ClientLog
 	public OSCClient client;
 	public List<OSCMessage> messages;
 	public List<string> log;
+
 }
 
 /// <summary>
@@ -54,6 +55,8 @@ public struct ClientLog
 /// </summary>
 public class OSCHandler : MonoBehaviour
 {
+	public GameObject MainCamera;
+	public Vector3 camPos;
 	#region Singleton Constructors
 	static OSCHandler()
 	{
@@ -103,6 +106,9 @@ public class OSCHandler : MonoBehaviour
         //Example:
 		CreateServer ("TouchOSC Server", 12000);
         //CreateServer("AndroidPhone", 6666);
+
+		MainCamera = GameObject.Find("MainCamera");
+		camPos.Set(0, 0, 0);
 	}
 	
 	#region Properties
@@ -204,7 +210,15 @@ public class OSCHandler : MonoBehaviour
     void OnPacketReceived(OSCServer server, OSCPacket packet)
     {
 		Debug.Log ("packet received");
-		//Debug.Log (packet.Data[0].ToString());
+		//String incoming = packet.Data [0][0];
+		//Array incoming = packet.Data [0];
+		Debug.Log (packet.Data [0].GetType());
+		//Debug.Log (packet.Data [1]);
+		//Debug.Log (packet.Data [2]);
+		camPos.Set((float)packet.Data [0], (float)packet.Data [1], (float)packet.Data [2]);
+		//Debug.Log (MainCamera);
+
+
     }
 	
 	/// <summary>
@@ -283,6 +297,7 @@ public class OSCHandler : MonoBehaviour
 	/// </summary>
 	public void UpdateLogs()
 	{
+		MainCamera.transform.position = camPos;
 		foreach(KeyValuePair<string,ServerLog> pair in _servers)
 		{
 			if(_servers[pair.Key].server.LastReceivedPacket != null)
