@@ -100,7 +100,10 @@ public class OSCHandler : MonoBehaviour
 		Debug.Log (ipAddress);
         //Initialize OSC clients (transmitters)
         //Example:		
-		CreateClient("TouchOSC Bridge", IPAddress.Parse("127.0.0.1"), 9000);
+		//CreateClient("TouchOSC Bridge", IPAddress.Parse("127.0.0.1"), 9000);
+
+		//ENTER THE IP ADDRESS OF THE OSC SENDER
+		CreateClient("TouchOSC Bridge", IPAddress.Parse("192.168.2.5"), 9000);
 
         //Initialize OSC servers (listeners)
         //Example:
