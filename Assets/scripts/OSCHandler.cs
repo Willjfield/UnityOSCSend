@@ -110,7 +110,7 @@ public class OSCHandler : MonoBehaviour
 		CreateServer ("TouchOSC Server", 12000);
         //CreateServer("AndroidPhone", 6666);
 
-		MainCamera = GameObject.Find("MainCamera");
+		MainCamera = GameObject.Find("Main Camera");
 		camPos.Set(0, 0, 0);
 	}
 	
@@ -300,7 +300,8 @@ public class OSCHandler : MonoBehaviour
 	/// </summary>
 	public void UpdateLogs()
 	{
-		MainCamera.transform.position = camPos;
+		MainCamera.transform.Translate (camPos,Space.Self);
+		camPos.Set ((float)0.0, (float)0.0, (float)0.0);
 		foreach(KeyValuePair<string,ServerLog> pair in _servers)
 		{
 			if(_servers[pair.Key].server.LastReceivedPacket != null)
