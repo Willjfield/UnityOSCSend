@@ -151,6 +151,7 @@ public class CardboardEye : MonoBehaviour {
     if (Application.isEditor) {
       // So you can see the approximate frustum in the Scene view when the camera is selected.
       camera.fieldOfView = 2 * Mathf.Atan(1 / proj[1, 1]) * Mathf.Rad2Deg;
+	//		camera.fieldOfView = 35;
     }
 
     // Set up variables for an image effect that will do distortion correction, e.g. the

@@ -31,7 +31,7 @@ void keyPressed() {
       p.update(0.0,0.0,mvAmnt);
       myMessage.add(p.location);
     } else if (keyCode == DOWN) {
-      p.update(0.0,0.0,mvAmnt);
+      p.update(0.0,0.0,-mvAmnt);
       myMessage.add(p.location);
     } else if (keyCode == RIGHT) {
        p.update(mvAmnt,0.0,0.0);

@@ -72,7 +72,11 @@ public class CardboardHead : MonoBehaviour {
 
   private bool updated;
 
+	public Vector3 pos;
+
+
   void Update() {
+
     updated = false;  // OK to recompute head pose.
     if (updateEarly) {
       UpdateHead();
@@ -102,9 +106,9 @@ public class CardboardHead : MonoBehaviour {
     }
 
     if (trackPosition) {
-      Vector3 pos = Cardboard.SDK.HeadPose.Position;
+		pos = Cardboard.SDK.HeadPose.Position;//THIS LINE...//...CAME FROM HERE
       if (target == null) {
-        transform.localPosition = pos;
+				transform.localPosition = pos;
       } else {
         transform.position = target.position + target.rotation * pos;
       }
