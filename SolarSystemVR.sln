@@ -5,6 +5,8 @@ Project("{F009B780-E82F-0152-718A-C9B4417991A0}") = "SolarSystemVR", "Assembly-C
 EndProject
 Project("{F009B780-E82F-0152-718A-C9B4417991A0}") = "SolarSystemVR", "Assembly-CSharp-Editor.csproj", "{B7FA1768-D5AA-3927-BE1C-C94E8A5F0F10}"
 EndProject
+Project("{F009B780-E82F-0152-718A-C9B4417991A0}") = "SolarSystemVR", "Assembly-UnityScript.unityproj", "{31F7AF01-DE20-219F-8DC1-74F8E9921270}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +21,15 @@ Global
 		{B7FA1768-D5AA-3927-BE1C-C94E8A5F0F10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7FA1768-D5AA-3927-BE1C-C94E8A5F0F10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7FA1768-D5AA-3927-BE1C-C94E8A5F0F10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31F7AF01-DE20-219F-8DC1-74F8E9921270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31F7AF01-DE20-219F-8DC1-74F8E9921270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31F7AF01-DE20-219F-8DC1-74F8E9921270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31F7AF01-DE20-219F-8DC1-74F8E9921270}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																											GlobalSection(MonoDevelopProperties) = preSolution
+																																																																					GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

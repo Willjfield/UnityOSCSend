@@ -12,8 +12,8 @@ void setup() {
   oscP5 = new OscP5(this,12000);
   
   //ENTER THE IP ADDRESS OF THE VR PHONE
-  myRemoteLocation = new NetAddress("192.168.2.5",12000);
-  //myRemoteLocation = new NetAddress("192.168.2.3",12000);
+  //myRemoteLocation = new NetAddress("192.168.2.5",12000);
+  myRemoteLocation = new NetAddress("192.168.2.3",12000);
   
   p=new PosSim();
 }
