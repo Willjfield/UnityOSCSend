@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{31F7AF01-DE20-219F-8DC1-74F8E9921270}</ProjectGuid>
+	<ProjectGuid>{9574FE92-A299-DA03-8B7D-47116B085A5B}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -47,12 +47,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\AnimateMaterial.js" />
-     <None Include="Assets\Cardboard\Legacy\Resources\SkyboxMesh.shader" />
-     <None Include="Assets\Cardboard\Legacy\Resources\GUIScreen.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Legacy\Android\AndroidManifest.xml" />
-     <None Include="Assets\Cardboard\Resources\RadialUndistortionEffect.shader" />
-     <None Include="Assets\Cardboard\Resources\SolidColor.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
