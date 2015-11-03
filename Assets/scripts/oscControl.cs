@@ -38,6 +38,7 @@ public class oscControl : MonoBehaviour {
 		servers = new Dictionary<string, ServerLog>();
 		clients = new Dictionary<string,ClientLog> ();
 		//obPos.Set(0, 0, 0);
+		Debug.Log ("osc Running");
 	}
 
 	// NOTE: The received messages at each server are updated here
@@ -49,8 +50,11 @@ public class oscControl : MonoBehaviour {
 		servers = OSCHandler.Instance.Servers;
 		clients = OSCHandler.Instance.Clients;
 
-
-		obPos = Input.GetTouch (0).position;
+		if (Input.touchCount > 0) {
+			obPos = Input.GetTouch (0).position;
+		} else {
+			obPos = Input.mousePosition;
+		}
 		float[] sendArray = new float[2]{obPos.x,obPos.y};
 		string sendString = obPos.ToString();
 		//string sendString = Time.frameCount.ToString ();

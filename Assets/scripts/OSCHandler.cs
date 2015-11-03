@@ -107,6 +107,7 @@ public class OSCHandler : MonoBehaviour
         //Initialize OSC servers (listeners)
         //Example:
 		CreateServer ("TouchOSC Server",3333);
+		Debug.Log ("osc Running");
 
 	}
 	
