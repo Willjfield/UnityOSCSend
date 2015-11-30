@@ -31,6 +31,7 @@ public class oscControl : MonoBehaviour {
 	private Dictionary<string, ClientLog> clients;
 
 	public Vector2 obPos;
+	public float season;
 
 	// Script initialization
 	void Start() {	
@@ -39,6 +40,11 @@ public class oscControl : MonoBehaviour {
 		clients = new Dictionary<string,ClientLog> ();
 		//obPos.Set(0, 0, 0);
 		Debug.Log ("osc Running");
+		season = 0.0f;
+	}
+
+	public void adjustSeason(float theSeason){
+		season = theSeason;
 	}
 
 	// NOTE: The received messages at each server are updated here
@@ -49,7 +55,7 @@ public class oscControl : MonoBehaviour {
 		OSCHandler.Instance.UpdateLogs();
 		servers = OSCHandler.Instance.Servers;
 		clients = OSCHandler.Instance.Clients;
-
+		/*
 		if (Input.touchCount > 0) {
 			obPos = Input.GetTouch (0).position;
 		} else {
@@ -57,9 +63,11 @@ public class oscControl : MonoBehaviour {
 		}
 		float[] sendArray = new float[2]{obPos.x,obPos.y};
 		string sendString = obPos.ToString();
-		//string sendString = Time.frameCount.ToString ();
+		*/
+		string sendSeason = season.ToString ();
 
-		OSCHandler.Instance.SendMessageToClient ("TouchOSC Bridge", "/touch", sendString);
+		//OSCHandler.Instance.SendMessageToClient ("TouchOSC Bridge", "/touch", sendString);
+		OSCHandler.Instance.SendMessageToClient ("TouchOSC Bridge", "/season", sendSeason);
 
 		/*
 		//Receive Messages:
